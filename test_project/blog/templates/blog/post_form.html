@@ -1,0 +1,23 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="content-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-botton mb-4">Blog Post</legend>
+                {{ form|crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit">Post</button>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ducimus, debitis quibusdam ut libero quo provident, delectus vero obcaecati dolore harum alias enim, ab tempora doloremque laboriosam eos soluta voluptatem.
+     
+
+
